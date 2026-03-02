@@ -64,6 +64,7 @@ public class Main {
         System.out.println("num 1" + num1 +"num2 : "+ num2);
 */
         //Ejercicio 4
+        /*
         int num[] = {10,2,1,30};
         int i;
         int temp;
@@ -78,11 +79,46 @@ public class Main {
             }
         }
 
-        System.out.println(num[0] + "&" + num[num.length-1]);
+        System.out.println(num[0] + "&" + num[num.length-1]); */
 
 
         //Ejercicio 5
-        //Ejercicio 6
+
+        System.out.println("########################### Menu ##################");
+        System.out.println("Marque 1: Para Consultar Saldo");
+        System.out.println("Marque 2: Para Recargar Saldo");
+        System.out.println("Marque 3: Para Iniciar Sesion");
+        System.out.println("Marque 4: Para Salir");
+
+        int numero;
+        Scanner teclado = new Scanner(System.in);
+        numero = teclado.nextInt();
+        teclado.nextLine();
+
+        try {
+            if (numero == 3){
+                System.out.println("ingrese dni: ");
+                String dni = teclado.nextLine();
+
+                Integer.parseInt(dni);
+
+                System.out.println("ingrese clave: ");
+                String clave = teclado.nextLine();
+
+
+                Integer.parseInt(clave);
+
+                if(clave.equals("1930")){
+                    System.out.println("Bienvenido");
+                }else {
+                    System.out.println("Clave incorrecta");
+                }
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Solo se permiten numeros");
+        }
+
+
 
 
 
