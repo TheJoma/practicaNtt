@@ -47,6 +47,7 @@ public class Main {
         teclado.close();*/
 
         //Ejercicio 3
+        /*
         int lista[] = {6,9,-8,23,3,100,3};
         int num1 = lista[0];
         int num2 = lista[0];
@@ -61,10 +62,25 @@ public class Main {
         }
 
         System.out.println("num 1" + num1 +"num2 : "+ num2);
-
+*/
         //Ejercicio 4
+        int num[] = {10,2,1,30};
+        int i;
+        int temp;
 
-        
+        for (int j = 0 ; j<num.length-1;j++){
+            for(i = 0; i< num.length-1;i++){
+                if (num[i] < num[i+1]){
+                    temp = num[i];
+                    num[i] = num[i+1];
+                    num[i+1]=temp;
+                }
+            }
+        }
+
+        System.out.println(num[0] + "&" + num[num.length-1]);
+
+
         //Ejercicio 5
         //Ejercicio 6
 
